@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking do Tiozão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #E6E6FA;
+            background-image: url("");
+            background-size: cover;
+            color: #000080;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #FFD700;
+            text-shadow: 2px 2px #FF4500;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            transform: rotate(-10deg);
+            margin-bottom: 40px;
+        }
+        .question {
+            border: 5px dashed #FF4500;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            max-width: 700px;
+            background: #fff url('https://media.giphy.com/media/3oKIP3bIsyoQQseAXq/giphy.gif') no-repeat;
+            background-size: 50px 50px;
+            background-position: 10px 10px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .question label {
+            display: block;
+            padding-left: 25px;
+            font-size: 1.1em;
+            line-height: 1.6em;
+            cursor: pointer;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #8B0000;
+            border: 3px solid #FFD700;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .title {font-size: 1.8em;
+            font-weight: bold;
+            color: #4B0082;
+            background: #FFFFE0;
+            border: 4px double #FF69B4;
+            padding: 20px;
+            display: inline-block;}
+        .result {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4B0082;
+            background: #FFFFE0;
+            border: 4px double #FF69B4;
+            padding: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Ranking do Tiozão 🎉</h1>
+
+    <form id="quizForm">
+        <!-- Perguntas de 1 a 10 -->
+        <div class="question">
+            <p class="title">1. Quando você vê uma nova moda, o que você pensa?</p>
+            <label><input type="radio" name="q1" value="5"> A. "Já vi isso nos anos 90..."</label><br>
+            <label><input type="radio" name="q1" value="4"> B. "Esses jovens inventam cada coisa..."</label><br>
+            <label><input type="radio" name="q1" value="3"> C. "Não é pra mim, mas ok."</label><br>
+            <label><input type="radio" name="q1" value="2"> D. "Quem sabe eu tente."</label><br>
+            <label><input type="radio" name="q1" value="1"> E. "Quero experimentar!"</label><br>
+        </div>
+
+        <div class="question">
+            <p class="title">2. Qual é a sua relação com WhatsApp?</p>
+            <label><input type="radio" name="q2" value="5"> A. Prefiro mandar áudios longos, dá menos trabalho.</label><br>
+            <label><input type="radio" name="q2" value="4"> B. Mando mensagens, mas sem pressa de responder.</label><br>
+            <label><input type="radio" name="q2" value="3"> C. Respondo rápido, mas não sou apegado(a).</label><br>
+            <label><input type="radio" name="q2" value="2"> D. Uso mais para o trabalho.</label><br>
+            <label><input type="radio" name="q2" value="1"> E. Estou sempre online e atento(a).</label><br>
+        </div>
+
+                <!-- Pergunta 3 -->
+        <div class="question">
+            <p class="title">3. Qual é a sua relação com música dos anos 80?</p>
+            <label><input type="radio" name="q3" value="5"> A. Só ouço isso!</label><br>
+            <label><input type="radio" name="q3" value="4"> B. Conheço várias e gosto bastante.</label><br>
+            <label><input type="radio" name="q3" value="3"> C. Ouço às vezes, mas não muito.</label><br>
+            <label><input type="radio" name="q3" value="2"> D. Conheço algumas, mas prefiro as novas.</label><br>
+            <label><input type="radio" name="q3" value="1"> E. Nem conheço!</label><br>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question">
+            <p class="title">4. Como você se sente sobre redes sociais?</p>
+            <label><input type="radio" name="q4" value="5"> A. Prefiro o bom e velho Facebook.</label><br>
+            <label><input type="radio" name="q4" value="4"> B. Uso, mas só o básico.</label><br>
+            <label><input type="radio" name="q4" value="3"> C. Uso diariamente, mas sem exageros.</label><br>
+            <label><input type="radio" name="q4" value="2"> D. Adoro acompanhar tudo que rola!</label><br>
+            <label><input type="radio" name="q4" value="1"> E. Sempre nas redes e adoro novidades!</label><br>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question">
+            <p class="title">5. O que você acha de selfies?</p>
+            <label><input type="radio" name="q5" value="5"> A. Selfies? Isso é coisa de jovem!</label><br>
+            <label><input type="radio" name="q5" value="4"> B. Tiro às vezes, mas não sou fã.</label><br>
+            <label><input type="radio" name="q5" value="3"> C. Tiro de vez em quando, depende do humor.</label><br>
+            <label><input type="radio" name="q5" value="2"> D. Gosto de tirar algumas para registrar momentos.</label><br>
+            <label><input type="radio" name="q5" value="1"> E. Adoro tirar selfies e postar sempre!</label><br>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="question">
+            <p class="title">6. Quando alguém te chama para dançar, o que você faz?</p>
+            <label><input type="radio" name="q6" value="5"> A. Fico só assistindo, já dancei muito.</label><br>
+            <label><input type="radio" name="q6" value="4"> B. Vou devagar, sem exagero.</label><br>
+            <label><input type="radio" name="q6" value="3"> C. Danço um pouco, só pra participar.</label><br>
+            <label><input type="radio" name="q6" value="2"> D. Gosto de dançar, mas nem sempre.</label><br>
+            <label><input type="radio" name="q6" value="1"> E. Pulo e danço, adoro uma festa!</label><br>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div class="question">
+            <p class="title">7. Como é a sua relação com filmes clássicos?</p>
+            <label><input type="radio" name="q7" value="5"> A. Só assisto filmes clássicos!</label><br>
+            <label><input type="radio" name="q7" value="4"> B. Gosto bastante, sempre que posso assisto.</label><br>
+            <label><input type="radio" name="q7" value="3"> C. Vejo às vezes, quando aparece.</label><br>
+            <label><input type="radio" name="q7" value="2"> D. Só vejo por recomendação de amigos.</label><br>
+            <label><input type="radio" name="q7" value="1"> E. Prefiro lançamentos e novidades.</label><br>
+        </div>
+
+        <!-- Pergunta 8 -->
+        <div class="question">
+            <p class="title">8. Qual é o seu relacionamento com tecnologia?</p>
+            <label><input type="radio" name="q8" value="5"> A. Prefiro o básico, sem complicações.</label><br>
+            <label><input type="radio" name="q8" value="4"> B. Gosto de usar o necessário.</label><br>
+            <label><input type="radio" name="q8" value="3"> C. Me viro bem, mas sem exageros.</label><br>
+            <label><input type="radio" name="q8" value="2"> D. Sou curioso e gosto de aprender.</label><br>
+            <label><input type="radio" name="q8" value="1"> E. Adoro estar por dentro de tudo!</label><br>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="question">
+            <p class="title">9. Quando você vê algo escrito à mão...</p>
+            <label><input type="radio" name="q9" value="5"> A. "Bons tempos das cartas e bilhetes..."</label><br>
+            <label><input type="radio" name="q9" value="4"> B. "Ainda bem que existe WhatsApp hoje."</label><br>
+            <label><input type="radio" name="q9" value="3"> C. "Às vezes é bom escrever à mão."</label><br>
+            <label><input type="radio" name="q9" value="2"> D. "Quase nunca escrevo à mão."</label><br>
+            <label><input type="radio" name="q9" value="1"> E. "Prefiro tudo digital!"</label><br>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="question">
+            <p class="title">10. Quando ouve alguém falar de "videocassete", você pensa...</p>
+            <label><input type="radio" name="q10" value="5"> A. "Nossa, bons tempos!"</label><br>
+            <label><input type="radio" name="q10" value="4"> B. "Era uma tecnologia interessante."</label><br>
+            <label><input type="radio" name="q10" value="3"> C. "Não tenho muita lembrança, mas conheço."</label><br>
+            <label><input type="radio" name="q10" value="2"> D. "Já ouvi falar, mas nunca usei."</label><br>
+            <label><input type="radio" name="q10" value="1"> E. "O que é isso?"</label><br>
+        </div>
+
+
+        <!-- Continuar adicionando as perguntas até a pergunta 10 -->
+
+        <button type="button" onclick="calculateScore()">Ver Resultado</button>
+    </form>
+
+    <p class="result" id="result"></p>
+
+    <!-- JavaScript -->
+    <script>
+        function calculateScore() {
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const question = document.querySelector(`input[name="q${i}"]:checked`);
+                if (question) {
+                    score += parseInt(question.value);
+                }
+            }
+
+            let resultText;
+            if (score <= 20) {
+                resultText = "🕺 Novinho(a) disfarçado(a) 🕺";
+            } else if (score <= 30) {
+                resultText = "👍 Já tem uns traços de tiozão 👍";
+            } else if (score <= 40) {
+                resultText = "👴 É tiozão com orgulho 👴";
+            } else {
+                resultText = "💪 Tiozão raiz, com diploma! 💪";
+            }
+
+            document.getElementById("result").innerHTML = `Você fez ${score} pontos. ${resultText}`;
+        }
+    </script>
+</body>
+</html>
